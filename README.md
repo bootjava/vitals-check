@@ -11,11 +11,13 @@ The purpose is to treat without delay.
 ## Tasks
 
 1. Reduce the cyclomatic complexity.
+1. Avoid duplication - functions that do nearly the same thing
 1. Complete the tests - cover all conditions.
 1. Currently, the vitals check returns a simple `boolean`.
 For prompt treatment, we need to know the abnormal vital and the breach -
 whether high or low. Add this capability.
 1. The abnormal vital needs to be reported. Add the ability to plug-in different reporters to this code.
+E.g., we may want reports in email or SMS
 
 Use an interface to decouple the vitals logic from the specific reporter.
 
